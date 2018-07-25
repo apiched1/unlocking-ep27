@@ -19,7 +19,8 @@ namespace temperature {
         /// <param name="fahrenheit"></param>
         /// <returns></returns>
         public double ConvertFahrenheitToCelsius (double fahrenheit) {
-            throw new NotImplementedException ();
+            double f = ((fahrenheit - 32) * 5/9);
+            return f;
         }
         /// <summary>
         /// เปลี่ยนค่า องศา Kelvin ให้เป็น Celsius
@@ -28,7 +29,8 @@ namespace temperature {
         /// <param name="kelvin"></param>
         /// <returns></returns>
         public double ConvertKelvinToCelsius (double kelvin) {
-            throw new NotImplementedException ();
+            double k = ((kelvin - 273.15));
+            return k;
         }
 
         /// <summary>
@@ -38,7 +40,8 @@ namespace temperature {
         /// <param name="celsius"></param>
         /// <returns></returns>
         public double ConvertCelsiusToFahrenheit (double celsius) {
-            throw new NotImplementedException ();
+            double c = ((1.8 * celsius) + 32);
+            return c; 
         }
         /// <summary>
         /// เปลี่ยนค่า องศา Kelvin ให้เป็น Fahrenheit
@@ -47,7 +50,8 @@ namespace temperature {
         /// <param name="Kelvin"></param>
         /// <returns></returns>
         public double ConvertKelvinToFahrenheit (double kelvin) {
-            throw new NotImplementedException ();
+            double k = ((kelvin * 1.8) - 459.67);
+            return k;
         }
         /// <summary>
         /// เปลี่ยนค่า องศา Fahrenheit ให้เป็น Kelvin
@@ -56,7 +60,8 @@ namespace temperature {
         /// <param name="fahrenheit"></param>
         /// <returns></returns>
         public double ConvertFahrenheitToKelvin (double fahrenheit) {
-            throw new NotImplementedException ();
+            double f = ((fahrenheit + 459.67) / 1.8);
+            return f;
         }
         /// <summary>
         /// เปลี่ยนค่า องศา celsius ให้เป็น Kelvin
@@ -65,7 +70,8 @@ namespace temperature {
         /// <param name="celsius"></param>
         /// <returns></returns>
         public double ConvertCelsiusToKelvin (double celsius) {
-            throw new NotImplementedException ();
+            double c = celsius + 273.15;
+            return c;
         }
 
     }
